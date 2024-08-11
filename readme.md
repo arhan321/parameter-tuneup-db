@@ -83,3 +83,14 @@
 - **innodb_purge_threads**: Jumlah thread untuk pembersihan log InnoDB. Pengaturan `16` meningkatkan performa pembersihan.
 
 - **innodb_page_cleaners**: Jumlah thread untuk membersihkan halaman InnoDB. Pengaturan `16` memastikan bahwa halaman yang dimodifikasi dibersihkan dengan cepat.
+
+# Parameter untuk pengecekan hasil tune up
+```
+SHOW VARIABLES LIKE 'max_connections';
+SHOW VARIABLES LIKE 'innodb_buffer_pool_size';
+SHOW VARIABLES LIKE 'innodb_log_file_size';
+SHOW VARIABLES LIKE 'query_cache_size';
+SHOW VARIABLES LIKE 'table_open_cache';
+SHOW VARIABLES LIKE 'innodb_io_capacity';
+SHOW VARIABLES LIKE 'innodb_thread_concurrency';
+```
